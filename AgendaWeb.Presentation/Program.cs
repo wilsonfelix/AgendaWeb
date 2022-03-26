@@ -1,7 +1,8 @@
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddRazorPages();
+// Configurando o projeto para MVC
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
@@ -16,6 +17,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapRazorPages();
+// Definindo a página inicial do projeto
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}"
+    );
 
 app.Run();
