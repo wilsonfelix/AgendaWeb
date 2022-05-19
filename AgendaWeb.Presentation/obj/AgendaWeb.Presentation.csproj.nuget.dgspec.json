@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\Projetos_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {}
+    "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\Projetos_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {
+    "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\Projetos_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+        "projectUniqueName": "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
         "projectName": "AgendaWeb.Presentation",
-        "projectPath": "D:\\Projetos\\Projetos_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+        "projectPath": "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
         "packagesPath": "C:\\Users\\wilson.LAB\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\Projetos_csharp\\AgendaWeb\\AgendaWeb.Presentation\\obj\\",
+        "outputPath": "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,7 +47,11 @@
           "dependencies": {
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             }
           },
           "imports": [

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OGjPdW60RcC0rtJ9aEHflOV0eVJLRBqO91VTc/EOyLw=",
+  "Hash": "PIEWwoIJnGzN+imJSCFvtso3K6cGWb2S1CXKWXW7TZc=",
   "Source": "AgendaWeb.Presentation",
   "BasePath": "_content/AgendaWeb.Presentation",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "AgendaWeb.Presentation\\wwwroot",
       "Source": "AgendaWeb.Presentation",
-      "ContentRoot": "D:\\Projetos\\Projetos_csharp\\AgendaWeb\\AgendaWeb.Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\wwwroot\\",
       "BasePath": "_content/AgendaWeb.Presentation",
       "Pattern": "**"
     }
