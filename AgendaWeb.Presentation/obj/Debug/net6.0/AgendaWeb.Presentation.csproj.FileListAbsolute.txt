@@ -228,8 +228,6 @@ D:\Projetos\Projetos_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\ru
 D:\Projetos\Projetos_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.csproj.CopyComplete
 D:\Projetos\Projetos_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.RazorAssemblyInfo.cache
 D:\Projetos\Projetos_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.RazorAssemblyInfo.cs
-D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\appsettings.Development.json
-D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\appsettings.json
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.staticwebassets.runtime.json
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.exe
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.deps.json

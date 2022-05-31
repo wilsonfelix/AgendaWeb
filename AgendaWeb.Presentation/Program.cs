@@ -3,6 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Configurando o projeto para MVC
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -22,5 +23,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}"
     );
-
+app.MapRazorPages();
 app.Run();
