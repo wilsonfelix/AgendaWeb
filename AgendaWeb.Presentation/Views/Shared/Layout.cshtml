@@ -9,9 +9,15 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>WFELIX IT SOLUTIONS - Agenda</title>
+
+    <!-- folhas de estilo CSS -->
+
     <link rel="stylesheet" href="~/css/bootstrap.css"/>
 </head>
 <body>
+    
+    <!--  montagem do menu-->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">WFA Agenda</a>
@@ -21,14 +27,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-1">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/Home/Index"><img src="/Ativo 1.svg" alt="" width="30" height="24"/>Página inicial
+          <a class="nav-link toggle" aria-current="page" href="/Home/Index" >@*<img src="/logo_wfa.svg" alt="" width="30" height="24"/>*@Página inicial
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" </a>
-        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" @*aria-expanded="false"*@>
             Gerenciar Agenda
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -44,15 +47,27 @@
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Insira sua busca" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        <button class="btn btn-primary" type="submit">Pesquisar</button>
       </form>
     </div>
   </div>
 </nav>
-<div class="container mt-4">
-    @RenderBody()
-</div>
 
-    <script src= "~/js/bootstrap.js"></script>
+
+ 
+
+
+
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            @RenderBody()
+        </div>
+    </div>  
+</div>
+       <!-- arquivos de estensão JS -->
+    <script src="~/js/bootstrap.js"></script>
+
 </body>
 </html>
