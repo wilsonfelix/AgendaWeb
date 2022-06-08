@@ -12,6 +12,10 @@ namespace AgendaWeb.Presentation.Controllers
         [HttpPost] //Anotation indica que o método será executado no SUBMIT
         public IActionResult Cadastro(EventoCadastroViewModel model)
         {
+            if (ModelState.IsValid)
+            {
+
+            }
             return View();
         }
 
@@ -23,6 +27,10 @@ namespace AgendaWeb.Presentation.Controllers
         [HttpPost] //Anotation indica que o método será executado no SUBMIT
         public IActionResult Consulta(EventoCadastroViewModel model)
         {
+            if (ModelState.IsValid)
+            {
+
+            }
             return View();
         }
 
@@ -34,8 +42,14 @@ namespace AgendaWeb.Presentation.Controllers
         [HttpPost] //Anotation indica que o método será executado no SUBMIT
         public IActionResult Relatorio(EventoCadastroViewModel model)
         {
+            if (ModelState.IsValid)
+            {
+
+            }
             return View();
         }
+
+
         public IActionResult Edicao()
         {
             return View();
