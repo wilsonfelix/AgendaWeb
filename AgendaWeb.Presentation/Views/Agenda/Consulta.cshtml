@@ -1,33 +1,49 @@
-﻿
+﻿@model AgendaWeb.Presentation.Models.EventoConsultaViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Consulta</title>
+</head>
+<body>
+
 <h5>Consulta de Eventos</h5>
 <p>
     Preencha os campos para consultar os eventos de sua agenda.
 </p>
 <hr />
 
-<form>
+ @using (Html.BeginForm())
+    {
 
-    <div class="row mb-3">
+    <div class = "row mb-3">
         <div class="col-md-3">
             <label>Data de início:</label>
-            <input type="date" class="form-control" />
+            @Html.TextBoxFor(model => model.DataMin, new{@class = "form-control", @type="date"})
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataMin)
+            </span>
         </div>
         <div class="col-md-3">
             <label>Data de término:</label>
-            <input type="date" class="form-control" />
+            @Html.TextBoxFor(model => model.DataMax, new{@class = "form-control", @type="date"})
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataMax)
+            </span>
         </div>
     </div>
 
-    <div class="row mb-3">
-        <div class="col-md-12">
-            <input type="submit" value="Pesquisar Eventos" 
-            class="btn btn-primary" />
+    <div class = "row mb-3">
+       <div class = "col-md-12">
+           <input class = "btn btn-primary" type="submit" value = "Consultar"/>
         </div>
     </div>
 
-</form>
+    }
 
-<table class="table table-hover">
+<table class = "table table-hover">
     <thead>
         <tr>
             <th>Nome do evento</th>
@@ -45,8 +61,8 @@
             <td></td>
             <td>
                 <a href="/Agenda/Edicao" 
-                    class="btn btn-primary btn-sm">Alterar</a>
-                <a href="#" class="btn btn-danger btn-sm">Excluir</a>
+                    class = "btn btn-primary btn-sm">Alterar</a>
+                <a href="#" class = "btn btn-danger btn-sm">Excluir</a>
             </td>
         </tr>
     </tbody>
@@ -58,3 +74,5 @@
         </tr>
     </tfoot>
 </table>
+</body>
+</html>

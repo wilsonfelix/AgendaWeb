@@ -57,7 +57,12 @@ namespace AgendaWeb.Presentation.Controllers
         [HttpPost] //Anotation indica que o método será executado no SUBMIT
         public IActionResult Edicao(EventoCadastroViewModel model)
         {
+            if (ModelState.IsValid)
+            {
+
+            }
             return View();
+            
         }
     }
 
