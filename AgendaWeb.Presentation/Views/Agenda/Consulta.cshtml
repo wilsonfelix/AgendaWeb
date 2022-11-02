@@ -1,0 +1,77 @@
+﻿@model AgendaWeb.Presentation.Models.EventoConsultaViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Consulta</title>
+</head>
+<body>
+
+<h5>Consulta de Eventos</h5>
+<p>
+    Preencha os campos para consultar os eventos de sua agenda.
+</p>
+<hr />
+
+ @using (Html.BeginForm())
+    {
+
+    <div class = "row mb-3">
+        <div class="col-md-3">
+            <label>Data de início:</label>
+            @Html.TextBoxFor(model => model.DataMin, new{@class = "form-control", @type="date"})
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataMin)
+            </span>
+        </div>
+        <div class="col-md-3">
+            <label>Data de término:</label>
+            @Html.TextBoxFor(model => model.DataMax, new{@class = "form-control", @type="date"})
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataMax)
+            </span>
+        </div>
+    </div>
+
+    <div class = "row mb-3">
+       <div class = "col-md-12">
+           <input class = "btn btn-primary" type="submit" value = "Consultar"/>
+        </div>
+    </div>
+
+    }
+
+<table class = "table table-hover">
+    <thead>
+        <tr>
+            <th>Nome do evento</th>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Prioridade</th>
+            <th>Operações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="/Agenda/Edicao" class = "btn btn-primary btn-sm">Alterar</a>
+                <a href="#" class="btn btn-danger btn-sm">Excluir</a>
+            </td>           
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5">
+                Quantidade de eventos: 0
+            </td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
