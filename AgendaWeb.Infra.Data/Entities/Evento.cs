@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace AgendaWeb.Infra.Data.Entities
 {
     /// <summary>
-    /// Classe de entidade para EventoEntity
+    /// Classe de entidade para Evento
     /// </summary>
-    public class EventoEntity
+    public class Evento
     {
         #region
         public Guid Id { get; set; }
-        public string? Name { get; set; }
+        public string? Nome { get; set; }
         public DateTime? Data { get; set; }
         public TimeSpan? Hora { get; set; }
         public string? Descricao { get; set; }

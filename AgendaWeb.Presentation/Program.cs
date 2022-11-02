@@ -1,9 +1,21 @@
 
+using AgendaWeb.Infra.Data.Interfaces;
+using AgendaWeb.Infra.Data.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Configurando o projeto para MVC
 builder.Services.AddControllersWithViews();
+//captura a connectionstring mapeada no appsettings.json
+var connectionString = builder.Configuration.GetConnectionString("AgendaWeb");
+
+//Envia a connectionstring para a classe EventoRepository
+builder.Services.AddTransient<IEventoRepository>
+    (map => new EventoRepository(connectionString));
+
+
 builder.Services.AddRazorPages();
+
 
 var app = builder.Build();
 

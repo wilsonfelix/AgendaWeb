@@ -3237,6 +3237,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "AgendaWeb.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "System.Data.SqlClient": "4.8.4"
+        },
+        "compile": {
+          "bin/placeholder/AgendaWeb.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgendaWeb.Infra.Data.dll": {}
+        }
       }
     }
   },
@@ -9632,10 +9646,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "AgendaWeb.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../AgendaWeb.Infra.Data/AgendaWeb.Infra.Data.csproj",
+      "msbuildProject": "../AgendaWeb.Infra.Data/AgendaWeb.Infra.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AgendaWeb.Infra.Data >= 1.0.0",
       "Dapper >= 2.0.123",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.5",
       "Swashbuckle.AspNetCore >= 6.4.0",
@@ -9674,7 +9694,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
+              "projectPath": "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
