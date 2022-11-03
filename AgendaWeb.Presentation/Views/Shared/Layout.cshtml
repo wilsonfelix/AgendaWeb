@@ -51,16 +51,9 @@
                             @Html.ValidationMessageFor(model => model.Pesquisa)
                         </span>
                     
-                            <input class="form-control me-2" type="search" placeholder="Insira sua busca" aria-label="Search">
-                             
-                                    
-                                
-                            <button class="btn btn-primary" type="submit">Pesquisar</button>
-                            
-                        
-                        
-                       
-                   
+                        <input class="form-control me-2" type="search" placeholder="Insira sua busca" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Pesquisar</button>
+                      
                     </form>
                    } 
                 
@@ -68,7 +61,35 @@
             
         </div>
     </nav>
-    
+    <!-- Exibir mensagem de sucesso -->
+    @if (TempData["MensagemSucesso"] != null)
+        {
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Sucesso.</strong> @TempData["MensagemSucesso"]
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+    else if (TempData["MensagemAlerta"] != null)
+        {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Atenção!</strong> @TempData["MensagemAlerta"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        }
+    else if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Erro!</strong> @TempData["MensagemErro"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
     <div class="container mt-4 me-lg-auto">
         <!-- local onde é inserido o conteudo das páginas -->
         <div class="card">
