@@ -12,14 +12,14 @@ namespace AgendaWeb.Infra.Data.Interfaces
     /// </summary>
     public interface IEventoRepository : IBaseRepository<Evento>
     {
-        List<Evento> GetAll();
-
+         
         /// <summary>
         /// Método para retornar todos os eventos dentro de um período de data
         /// </summary>
         /// <param name="dataMin">Data de início do período</param>
-        /// <param name="datedataMax">Data de término do período</param>
+        /// <param name="dataMax">Data de término do período</param>
+        /// <param name="ativo">Flag 0 para inativo ou 1 para ativo</param>
         /// <returns>Lista de eventos</returns>
-        List<Evento> GetByDatas(DateTime dataMin, DateTime datedataMax);
+        List<Evento> GetByDatas(DateTime dataMin, DateTime dataMax, int ativo);
     }
 }

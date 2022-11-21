@@ -26,8 +26,8 @@ namespace AgendaWeb.Infra.Data.Repositories
 
         public void Create(Evento obj)
         {
-            var query = "INSERT INTO EVENTO(ID, NOME, DATA, HORA, DESCRICAO, PRIORIDADE, DATAINCLUSAO, DATAALTERACAO) " +
-                "VALUES (@Id, @Nome, @Data, @Hora, @Descricao, @Prioridade, @DataInclusao, @DataAlteracao)";
+            var query = @"INSERT INTO EVENTO(ID, NOME, DATA, HORA, DESCRICAO, PRIORIDADE, DATAINCLUSAO, DATAALTERACAO) 
+                                 VALUES (@Id, @Nome, @Data, @Hora, @Descricao, @Prioridade, @DataInclusao, @DataAlteracao)";
 
             //Conecta no DB
             using (var connection = new SqlConnection(_connectionString))
@@ -39,7 +39,7 @@ namespace AgendaWeb.Infra.Data.Repositories
 
         public void Delete(Evento obj)
         {
-            var query = "DELETE FROM EVENTO WHERE ID = @Id";
+            var query = @"DELETE FROM EVENTO WHERE ID = @Id";
 
             //Conecta no DB
             using (var connection = new SqlConnection(_connectionString))
@@ -51,16 +51,17 @@ namespace AgendaWeb.Infra.Data.Repositories
         public List<Evento> GetAll()
         {
             throw new NotImplementedException();
+
             //var query = "SELECT * FROM EVENTO";
 
             ////Conecta no DB
             //using (var connection = new SqlConnection(_connectionString))
             //{
-            //    connection.Execute(query);
+            //    connection.Execute(GetAll, query);
             //}
         }
-
-        public List<Evento> GetByDatas(DateTime dataMin, DateTime datedataMax)
+                
+        public List<Evento> GetByDatas(DateTime dataMin, DateTime dataMax, int ativo)
         {
             throw new NotImplementedException();
         }
@@ -72,7 +73,22 @@ namespace AgendaWeb.Infra.Data.Repositories
 
         public void Update(Evento obj)
         {
-            throw new NotImplementedException();
+            var query = @"UPDATE FROM EVENTO 
+                            SET
+                                NOME = @Nome, 
+                                DATA = @Data, 
+                                HORA = @Hora, 
+                                DESCRICAO = @Descricao, 
+                                PRIORIDADE = @Prioridade, 
+                                ${DateTime.Now} = @DataAlteracao,
+                                ATIVO = @Ativo
+                            WHERE ID = @Id";
+
+            //Conecta no DB
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Execute(query, obj);
+            }
         }
     }
 }
