@@ -17,7 +17,7 @@ namespace AgendaWeb.Infra.Data.Interfaces
         void Delete(TEntity entity);
 
         List<TEntity> GetAll();
-        TEntity GetById(Guid id);
+        TEntity? GetById(Guid id);
 
     }
 }

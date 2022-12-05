@@ -50,25 +50,44 @@ namespace AgendaWeb.Infra.Data.Repositories
 
         public List<Evento> GetAll()
         {
-            throw new NotImplementedException();
+            
+            var query = @"SELECT * FROM EVENTO
+                        ORDER BY DATA DESC, HORA DESC
+            ";
 
-            //var query = "SELECT * FROM EVENTO";
-
-            ////Conecta no DB
-            //using (var connection = new SqlConnection(_connectionString))
-            //{
-            //    connection.Execute(GetAll, query);
-            //}
+            //Conecta no DB
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                return connection.Query<Evento>(query).ToList();
+            }
         }
                 
         public List<Evento> GetByDatas(DateTime dataMin, DateTime dataMax, int ativo)
         {
-            throw new NotImplementedException();
+            var query = @"SELECT * FROM EVENTO
+                        WHERE ATIVO = @ativo AND (DATA BETWEEN @dataMin AND @dataMax) 
+                        ORDER BY DATA DESC, HORA DESC
+            ";
+
+            //Conecta no DB
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                return connection.Query<Evento>(query, new {ativo, dataMin, dataMax}).ToList();
+            }
         }
 
-        public Evento GetById(Guid id)
+        public Evento? GetById(Guid id)
         {
-            throw new NotImplementedException();
+            var query = @"SELECT * FROM EVENTO
+                        WHERE ID = @Id 
+                        ORDER BY dataMin DESC
+            ";
+
+            //Conecta no DB
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                return connection.Query<Evento>(query, new {id}).FirstOrDefault();
+            }
         }
 
         public void Update(Evento obj)
