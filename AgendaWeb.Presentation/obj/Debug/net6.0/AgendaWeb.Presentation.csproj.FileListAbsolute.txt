@@ -463,6 +463,11 @@ D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\ob
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.MvcApplicationPartsAssemblyInfo.cache
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.RazorAssemblyInfo.cache
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.RazorAssemblyInfo.cs
+D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.AgendaWeb.Presentation.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.build.AgendaWeb.Presentation.props
+D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AgendaWeb.Presentation.props
+D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AgendaWeb.Presentation.props
+D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets.pack.json
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets.build.json
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets.development.json
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\scopedcss\bundle\AgendaWeb.Presentation.styles.css
@@ -472,8 +477,3 @@ D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\ob
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.pdb
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.genruntimeconfig.cache
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\ref\AgendaWeb.Presentation.dll
-D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.AgendaWeb.Presentation.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.build.AgendaWeb.Presentation.props
-D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AgendaWeb.Presentation.props
-D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AgendaWeb.Presentation.props
-D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets.pack.json

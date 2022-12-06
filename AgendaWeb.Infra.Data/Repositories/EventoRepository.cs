@@ -62,7 +62,7 @@ namespace AgendaWeb.Infra.Data.Repositories
             }
         }
                 
-        public List<Evento> GetByDatas(DateTime dataMin, DateTime dataMax, int ativo)
+        public List<Evento> GetByDatas(DateTime? dataMin, DateTime? dataMax, int? ativo)
         {
             var query = @"SELECT * FROM EVENTO
                         WHERE ATIVO = @ativo AND (DATA BETWEEN @dataMin AND @dataMax) 

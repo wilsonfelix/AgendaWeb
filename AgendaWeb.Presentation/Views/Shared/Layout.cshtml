@@ -1,7 +1,7 @@
 ﻿@{
     Layout = null;
  }
-@model AgendaWeb.Presentation.Models.EventoPesquisaViewModel
+@*@model AgendaWeb.Presentation.Models.EventoConsultaViewModel*@
 <!DOCTYPE html>
 
 <html>
@@ -42,20 +42,18 @@
                         </ul>
                     </li>
                 </ul>
-                
-                   @using (Html.BeginForm())
-                    {
+                       
                     <form class="d-flex">
                     
-                        <span class="text-danger">
+                        @*<span class="text-danger">
                             @Html.ValidationMessageFor(model => model.Pesquisa)
-                        </span>
+                        </span>*@
                     
                         <input class="form-control me-2" type="search" placeholder="Insira sua busca" aria-label="Search">
                         <button class="btn btn-primary" type="submit">Pesquisar</button>
                       
                     </form>
-                   } 
+                   
                 
             </div>
             

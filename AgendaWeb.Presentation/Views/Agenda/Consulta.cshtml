@@ -1,14 +1,5 @@
 ﻿@model AgendaWeb.Presentation.Models.EventoConsultaViewModel
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Consulta</title>
-</head>
-<body>
-
 <h5>Consulta de Eventos</h5>
 <p>
     Preencha os campos para consultar os eventos de sua agenda.
@@ -21,57 +12,99 @@
     <div class = "row mb-3">
         <div class="col-md-3">
             <label>Data de início:</label>
-            @Html.TextBoxFor(model => model.DataMin, new{@class = "form-control", @type="date"})
+                @Html.TextBoxFor(model => model.DataMin, new{@type="date", @class = "form-control"})
             <span class="text-danger">
                 @Html.ValidationMessageFor(model => model.DataMin)
             </span>
         </div>
         <div class="col-md-3">
             <label>Data de término:</label>
-            @Html.TextBoxFor(model => model.DataMax, new{@class = "form-control", @type="date"})
+                @Html.TextBoxFor(model => model.DataMax, new{@type="date", @class = "form-control"})
             <span class="text-danger">
                 @Html.ValidationMessageFor(model => model.DataMax)
+            </span>
+        </div>
+        <div class="col-md-6">
+            <br />
+            @Html.RadioButtonFor(model => model.Ativo, "1") <span>Eventos Ativos</span>
+            &nbsp;&nbsp;
+            @Html.RadioButtonFor(model => model.Ativo, "0") <span>Eventos Inativos</span>
+            <br />
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Ativo)
             </span>
         </div>
     </div>
 
     <div class = "row mb-3">
        <div class = "col-md-12">
-           <input class = "btn btn-primary" type="submit" value = "Consultar"/>
+            <input type="submit" value="Consultar" class="btn btn-primary"/>
         </div>
     </div>
 
     }
 
-<table class = "table table-hover">
+@*if (Model != null && Model.Eventos != null && Model.Eventos.Count > 0)
+{
+<table class="table table-hover">
     <thead>
         <tr>
             <th>Nome do evento</th>
             <th>Data</th>
             <th>Hora</th>
             <th>Prioridade</th>
+            <th>Ativo</th>
             <th>Operações</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <a href="/Agenda/Edicao" class = "btn btn-primary btn-sm">Alterar</a>
-                <a href="#" class="btn btn-danger btn-sm">Excluir</a>
-            </td>           
-        </tr>
+        @foreach (var item in Model.Eventos)
+        {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@Convert.ToDateTime(item.Data).ToString("ddd, dd/MM/yyyy")</td>
+                <td>@item.Hora</td>
+                <td>
+                    @if (item.Prioridade == 1)
+                    {
+                        <span class="badge bg-success">BAIXA</span>
+                    }
+                    else if (item.Prioridade == 2)
+                    {
+                        <span class="badge bg-warning">MÉDIA</span>
+                    }
+                    else if (item.Prioridade == 3)
+                    {
+                        <span class="badge bg-danger">ALTA</span>
+                    }
+                </td>
+                <td>
+                    @if (item.Ativo == 0)
+                    {
+                        <span class="text-danger">Não</span>
+                    }
+                    else if (item.Ativo == 1)
+                    {
+                        <span class="text-success">Sim</span>
+                    }
+                </td>
+                <td>
+                    <a href="/Agenda/Edicao?id=@item.Id" class="btn btn-primary btn-sm">
+                        Alterar
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm">
+                        Excluir
+                    </a>
+                </td>
+            </tr>
+        }
     </tbody>
     <tfoot>
         <tr>
-            <td colspan="5">
-                Quantidade de eventos: 0
+            <td colspan="6">
+                Quantidade de eventos: @Model.Eventos.Count
             </td>
         </tr>
     </tfoot>
 </table>
-</body>
-</html>
+*@
