@@ -26,8 +26,8 @@ namespace AgendaWeb.Infra.Data.Repositories
 
         public void Create(Evento obj)
         {
-            var query = @"INSERT INTO EVENTO(ID, NOME, DATA, HORA, DESCRICAO, PRIORIDADE, DATAINCLUSAO, DATAALTERACAO) 
-                                 VALUES (@Id, @Nome, @Data, @Hora, @Descricao, @Prioridade, @DataInclusao, @DataAlteracao)";
+            var query = @"INSERT INTO EVENTO(ID, NOME, DATA, HORA, DESCRICAO, PRIORIDADE, DATAINCLUSAO, DATAALTERACAO, ATIVO) 
+                                 VALUES (@Id, @Nome, @Data, @Hora, @Descricao, @Prioridade, @DataInclusao, @DataAlteracao, 1)";
 
             //Conecta no DB
             using (var connection = new SqlConnection(_connectionString))
@@ -65,7 +65,7 @@ namespace AgendaWeb.Infra.Data.Repositories
         public List<Evento> GetByDatas(DateTime? dataMin, DateTime? dataMax, int? ativo)
         {
             var query = @"SELECT * FROM EVENTO
-                        WHERE ATIVO = @ativo AND (DATA BETWEEN @dataMin AND @dataMax) 
+                        WHERE ATIVO = @Ativo AND (DATA BETWEEN @dataMin AND @dataMax) 
                         ORDER BY DATA DESC, HORA DESC
             ";
 
