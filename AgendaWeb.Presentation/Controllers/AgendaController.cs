@@ -150,22 +150,37 @@ namespace AgendaWeb.Presentation.Controllers
             {
                 try
                 {
-                    //obtendo os dados do evento no banco de dados..
-                    var evento = _eventoRepository.GetById(model.Id);
+                    //converter as datas
+                    var Data = Convert.ToDateTime(model.Data).ToString("ddMMyyyy");
+                    var DataSys = DateTime.Now.ToString("ddMMyyyy");
+                    var testedata = Convert.ToDateTime(Data);
+                    var testedatasys= Convert.ToDateTime(DataSys);
 
-                    //modificar os dados do evento
-                    evento.Nome = model.Nome;
-                    evento.Data = Convert.ToDateTime(model.Data);
-                    evento.Hora = TimeSpan.Parse(model.Hora);
-                    evento.Descricao = model.Descricao;
-                    evento.Prioridade = Convert.ToInt32(model.Prioridade);
-                    evento.Ativo = model.Ativo;
-                    evento.DataAlteracao = DateTime.Now;
+                    //verificando se a data de inicio é menor ou igual a data de fim
+                    if (testedata <= testedatasys)
+                    {
+                        TempData["MensagemErro"] = "A data de início deve ser menor ou igual a data de término.";
+                    }
+                    else
+                    {
 
-                    //atualizando no banco de dados
-                    _eventoRepository.Update(evento);
+                        //obtendo os dados do evento no banco de dados..
+                        var evento = _eventoRepository.GetById(model.Id);
 
-                    TempData["MensagemSucesso"] = "Dados do evento atualizado com sucesso.";
+                        //modificar os dados do evento
+                        evento.Nome = model.Nome;
+                        evento.Data = Convert.ToDateTime(model.Data);
+                        evento.Hora = TimeSpan.Parse(model.Hora);
+                        evento.Descricao = model.Descricao;
+                        evento.Prioridade = Convert.ToInt32(model.Prioridade);
+                        evento.Ativo = model.Ativo;
+                        evento.DataAlteracao = DateTime.Now;
+
+                        //atualizando no banco de dados
+                        _eventoRepository.Update(evento);
+
+                        TempData["MensagemSucesso"] = "Dados do evento atualizado com sucesso.";
+                    }
                 }
                 catch (Exception e)
                 {

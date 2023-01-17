@@ -27,5 +27,7 @@ namespace AgendaWeb.Presentation.Models
 
         [Required(ErrorMessage = "Por favor, informe se o evento está ativo ou inativo.")]
         public int? Ativo { get; set; }
+
+        
     }
 }

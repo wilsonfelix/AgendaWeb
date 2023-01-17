@@ -90,14 +90,14 @@ namespace AgendaWeb.Infra.Data.Repositories
 
         public void Update(Evento obj)
         {
-            var query = @"UPDATE FROM EVENTO 
+            var query = @"UPDATE EVENTO 
                             SET
                                 NOME = @Nome, 
                                 DATA = @Data, 
                                 HORA = @Hora, 
                                 DESCRICAO = @Descricao, 
                                 PRIORIDADE = @Prioridade, 
-                                ${DateTime.Now} = @DataAlteracao,
+                                DATAALTERACAO = DATEADD(HOUR, -3, GETDATE()),
                                 ATIVO = @Ativo
                             WHERE ID = @Id";
 
