@@ -74,14 +74,14 @@ namespace AgendaWeb.Presentation.Controllers
                 try
                 {
                     //converter as datas
-                    var dataMin = Convert.ToDateTime(model.DataMin);
-                    var dataMax = Convert.ToDateTime(model.DataMax);
+                    var DataMin = Convert.ToDateTime(model.DataMin);
+                    var DataMax = Convert.ToDateTime(model.DataMax);
 
                     //verificando se a data de inicio é menor ou igual a data de fim
-                    if (dataMin <= dataMax)
+                    if (DataMin <= DataMax)
                     {
                         //realizando a consulta de eventos
-                        model.Eventos = _eventoRepository.GetByDatas(dataMin, dataMax, model.Ativo);
+                        model.Eventos = _eventoRepository.GetByDatas(DataMin, DataMax, model.Ativo);
 
                         //verificando se algum evento foi obtido
                         if (model.Eventos.Count > 0)
@@ -112,14 +112,14 @@ namespace AgendaWeb.Presentation.Controllers
             return View(model);
         }
 
-        public IActionResult Edicao(Guid id)
+        public IActionResult Edicao(Guid Id)
         {
             var model = new EventoEdicaoViewModel();
 
             try
             {
                 //consultar o evento no banco de dados atraves do ID
-                var evento = _eventoRepository.GetById(id);
+                var evento = _eventoRepository.GetById(Id);
 
                 //preencher os dados da classe model com as informações do evento
                 model.Id = evento.Id;
