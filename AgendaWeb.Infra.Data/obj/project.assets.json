@@ -502,7 +502,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Wilson\\.nuget\\packages\\": {},
+    "C:\\Users\\Wilson.DESKTOP-6HOG7VS\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -511,14 +511,14 @@
       "projectUniqueName": "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
       "projectName": "AgendaWeb.Infra.Data",
       "projectPath": "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\Wilson\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Wilson.DESKTOP-6HOG7VS\\.nuget\\packages\\",
       "outputPath": "D:\\Projetos\\Projetos_csharp\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Wilson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Wilson.DESKTOP-6HOG7VS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -571,7 +571,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
