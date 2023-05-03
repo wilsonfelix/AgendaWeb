@@ -151,8 +151,8 @@ namespace AgendaWeb.Presentation.Controllers
                 try
                 {
                     //converter as datas
-                    var Data = Convert.ToDateTime(model.Data).ToString("ddMMyyyy");
-                    var DataSys = DateTime.Now.ToString("ddMMyyyy");
+                    var Data = Convert.ToDateTime(model.Data).ToString("dd/MM/yyyy");
+                    var DataSys = DateTime.Now.ToString("dd/MM/yyyy");
                     var testedata = Convert.ToDateTime(Data);
                     var testedatasys= Convert.ToDateTime(DataSys);
 
