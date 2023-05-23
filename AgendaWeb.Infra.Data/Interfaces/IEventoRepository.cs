@@ -21,5 +21,6 @@ namespace AgendaWeb.Infra.Data.Interfaces
         /// <param name="Ativo">Flag 0 para inativo ou 1 para ativo</param>
         /// <returns>Lista de eventos</returns>
         List<Evento> GetByDatas(DateTime? DataMin, DateTime? DataMax, int? Ativo);
+        List<Evento> GetAll(DateTime? DataMin, DateTime? DataMax, int? Ativo);
     }
 }

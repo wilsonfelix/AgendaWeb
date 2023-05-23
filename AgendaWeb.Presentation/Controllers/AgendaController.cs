@@ -106,8 +106,16 @@ namespace AgendaWeb.Presentation.Controllers
                     //verificando se a data de inicio é menor ou igual a data de fim
                     if (DataMin <= DataMax)
                     {
-                        //realizando a consulta de eventos
-                        model.Eventos = _eventoRepository.GetByDatas(DataMin, DataMax, model.Ativo);
+                        if (model.Ativo == 3) 
+                        {
+                            model.Eventos = _eventoRepository.GetAll(DataMin, DataMax, model.Ativo);
+                        }
+                        else
+                        {
+                            //realizando a consulta de eventos
+                            model.Eventos = _eventoRepository.GetByDatas(DataMin, DataMax, model.Ativo);
+                        }
+                        
 
                         //verificando se algum evento foi obtido
                         if (model.Eventos.Count > 0)

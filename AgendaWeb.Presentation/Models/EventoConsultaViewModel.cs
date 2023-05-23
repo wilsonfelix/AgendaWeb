@@ -11,7 +11,7 @@ namespace AgendaWeb.Presentation.Models
         [Required(ErrorMessage = "Por favor, informe a data de término.")]
         public string? DataMax { get; set; }
 
-        [Required(ErrorMessage = "Por favor, marque Ativo ou Inativo")]
+        [Required(ErrorMessage = "Por favor, marque Ativo, Inativo ou Todos")]
         public int? Ativo { get; set; }
 
         //Lista de eventos que será utilizado para exibir

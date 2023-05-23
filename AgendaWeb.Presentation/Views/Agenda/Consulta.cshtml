@@ -29,6 +29,8 @@
             @Html.RadioButtonFor(model => model.Ativo, "1") <span>Eventos Ativos</span>
             &nbsp;&nbsp;
             @Html.RadioButtonFor(model => model.Ativo, "0") <span>Eventos Inativos</span>
+            &nbsp;&nbsp;
+            @Html.RadioButtonFor(model => model.Ativo, "3") <span>Todos os Eventos</span>
             <br />
             <span class="text-danger">
                 @Html.ValidationMessageFor(model => model.Ativo)

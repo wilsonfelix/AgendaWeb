@@ -61,7 +61,20 @@ namespace AgendaWeb.Infra.Data.Repositories
                 return connection.Query<Evento>(query).ToList();
             }
         }
-                
+
+        public List<Evento> GetAll(DateTime? DataMin, DateTime? DataMax, int? Ativo)
+        {
+            var query = @"SELECT * FROM EVENTO
+                        ORDER BY DATA DESC, HORA DESC
+            ";
+
+            //Conecta no DB
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                return connection.Query<Evento>(query).ToList();
+            }
+        }
+
         public List<Evento> GetByDatas(DateTime? DataMin, DateTime? DataMax, int? Ativo)
         {
             var query = @"SELECT * FROM EVENTO
