@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KAmG/lFyUiZAlXKOdbkhw6GyDNoA2UbTy+blL4j0NSDfnQeBQlYI3OVrI/pQOBmB3WedtrYto7BI+k/AGY0jZg==",
+  "dgSpecHash": "2E9mUvtltC9y9Zgf8dbzUjbGdTLdRvmsb+N26eMdocSU7xOc6UcNMt9YDEu0TftrWVzhnVjaR1ZrHU3sWwhufw==",
   "success": true,
-  "projectFilePath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\Nova pasta\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+  "projectFilePath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wilson\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Wilson\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",

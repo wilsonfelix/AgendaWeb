@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace AgendaWeb.Presentation.Models

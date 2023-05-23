@@ -30,16 +30,26 @@ namespace AgendaWeb.Presentation.Controllers
             {
                 try
                 {
-                    //converter as datas
+                    //Converte a data
                     var Data = Convert.ToDateTime(model.Data).ToString("dd/MM/yyyy");
                     var DataSys = DateTime.Now.ToString("dd/MM/yyyy");
                     var DataCadEvento = Convert.ToDateTime(Data);
                     var DataSysConv = Convert.ToDateTime(DataSys);
 
+                    //Converte a hora
+                    var Hora = Convert.ToDateTime(model.Hora).ToString("HH:mm:ss");
+                    var HoraSys = DateTime.Now.ToString("HH:mm:ss");
+                    var HoraCadEvento = Convert.ToDateTime(Hora);
+                    var HoraSysConv = Convert.ToDateTime(HoraSys);
+
                     //verificando se a data de inicio é menor ou igual a data de fim
                     if (DataCadEvento < DataSysConv)
                     {
-                        TempData["MensagemErro"] = "A data de início deve ser igual ou maior que a data atual.";
+                        TempData["MensagemErro"] = "A data de início do evento não pode ser anterior a data atual.";
+                    }
+                    else if(HoraCadEvento < HoraSysConv)
+                    {
+                        TempData["MensagemErro"] = "Não se pode agendar um evento com a hora atual. Por favor selecione ao menos 1 minuto a mais.";
                     }
                     else
                     {
@@ -140,7 +150,7 @@ namespace AgendaWeb.Presentation.Controllers
                 //preencher os dados da classe model com as informações do evento
                 model.Id = evento.Id;
                 model.Nome = evento.Nome;
-                model.Data = Convert.ToDateTime(evento.Data).ToString("yyyy-MM-dd");
+                model.Data = Convert.ToDateTime(evento.Data).ToString("dd-MM-yyyy");
                 model.Hora = evento.Hora.ToString();
                 model.Descricao = evento.Descricao;
                 model.Prioridade = evento.Prioridade.ToString();
@@ -166,20 +176,29 @@ namespace AgendaWeb.Presentation.Controllers
             {
                 try
                 {
-                    //converter as datas
+                    //Converte a data
                     var Data = Convert.ToDateTime(model.Data).ToString("dd/MM/yyyy");
                     var DataSys = DateTime.Now.ToString("dd/MM/yyyy");
-                    var testedata = Convert.ToDateTime(Data);
-                    var testedatasys= Convert.ToDateTime(DataSys);
+                    var DataCadEvento = Convert.ToDateTime(Data);
+                    var DataSysConv = Convert.ToDateTime(DataSys);
+
+                    //Converte a hora
+                    var Hora = Convert.ToDateTime(model.Hora).ToString("HH:mm:ss");
+                    var HoraSys = DateTime.Now.ToString("HH:mm:ss");
+                    var HoraCadEvento = Convert.ToDateTime(Hora);
+                    var HoraSysConv = Convert.ToDateTime(HoraSys);
 
                     //verificando se a data de inicio é menor ou igual a data de fim
-                    if (testedata <= testedatasys)
+                    if (DataCadEvento < DataSysConv)
                     {
-                        TempData["MensagemErro"] = "A data de início deve ser menor ou igual a data de término.";
+                        TempData["MensagemErro"] = "A data de início do evento não pode ser atualizada com a data anterior a atual.";
+                    }
+                    else if (HoraCadEvento < HoraSysConv)
+                    {
+                        TempData["MensagemErro"] = "Não se pode atualizar um evento com a hora atual. Por favor selecione ao menos 1 minuto a mais.";
                     }
                     else
                     {
-
                         //obtendo os dados do evento no banco de dados..
                         var evento = _eventoRepository.GetById(model.Id);
 
