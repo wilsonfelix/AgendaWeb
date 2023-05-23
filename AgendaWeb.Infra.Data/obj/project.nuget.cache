@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eUEWkRzdkZ6KDSFUMEqjdp1/Cj/MAhYfEwxhVC24wGYZQNNhYHIi5+QUC+0+1jTLn58yQh1MGsyn+KKv0yIeIg==",
+  "dgSpecHash": "zTD2IjXkjuLaUWLQDh8sjDaXtQwzmxcY+CargA3BEfKym1JkXPHCsDox+8i9T2svSa1/Pv9UlRGC9xkIs4AOOA==",
   "success": true,
-  "projectFilePath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
+  "projectFilePath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\Nova pasta\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wilson\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Wilson\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

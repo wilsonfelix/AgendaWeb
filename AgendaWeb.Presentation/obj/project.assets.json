@@ -9669,11 +9669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+      "projectUniqueName": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\Nova pasta\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
       "projectName": "AgendaWeb.Presentation",
-      "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+      "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\Nova pasta\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
       "packagesPath": "C:\\Users\\Wilson\\.nuget\\packages\\",
-      "outputPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\obj\\",
+      "outputPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\Nova pasta\\AgendaWeb\\AgendaWeb.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9696,8 +9696,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
-              "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
+            "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\Nova pasta\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
+              "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\Nova pasta\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
             }
           }
         }

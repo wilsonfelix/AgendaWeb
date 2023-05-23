@@ -24,28 +24,44 @@ namespace AgendaWeb.Presentation.Controllers
         [HttpPost] //Annotation indica que o método será executado no SUBMIT
         public IActionResult Cadastro(EventoCadastroViewModel model)
         {
+            
             //verificar se todos os campos passaram nas regras de validação
             if (ModelState.IsValid)
             {
                 try
                 {
-                    var evento = new Evento
+                    //converter as datas
+                    var Data = Convert.ToDateTime(model.Data).ToString("dd/MM/yyyy");
+                    var DataSys = DateTime.Now.ToString("dd/MM/yyyy");
+                    var DataCadEvento = Convert.ToDateTime(Data);
+                    var DataSysConv = Convert.ToDateTime(DataSys);
+
+                    //verificando se a data de inicio é menor ou igual a data de fim
+                    if (DataCadEvento < DataSysConv)
                     {
-                        Id = Guid.NewGuid(),
-                        Nome = model.Nome,
-                        Data = Convert.ToDateTime(model.Data),
-                        Hora = TimeSpan.Parse(model.Hora),
-                        Descricao = model.Descricao,
-                        Prioridade = Convert.ToInt32(model.Prioridade),
-                        DataInclusao = DateTime.Now,
-                        DataAlteracao = DateTime.Now
-                    };
+                        TempData["MensagemErro"] = "A data de início deve ser igual ou maior que a data atual.";
+                    }
+                    else
+                    {
 
-                    //gravando no banco de dados
-                    _eventoRepository.Create(evento);
+                        var evento = new Evento
+                        {
+                            Id = Guid.NewGuid(),
+                            Nome = model.Nome,
+                            Data = Convert.ToDateTime(model.Data),
+                            Hora = TimeSpan.Parse(model.Hora),
+                            Descricao = model.Descricao,
+                            Prioridade = Convert.ToInt32(model.Prioridade),
+                            DataInclusao = DateTime.Now,
+                            DataAlteracao = DateTime.Now
+                        };
 
-                    TempData["MensagemSucesso"] = $"Evento {evento.Nome}, cadastrado com sucesso.";
-                    ModelState.Clear(); //limpando os campos do formulário (model)
+                        //gravando no banco de dados
+                        _eventoRepository.Create(evento);
+
+                        TempData["MensagemSucesso"] = $"Evento {evento.Nome}, cadastrado com sucesso.";
+                        ModelState.Clear(); //limpando os campos do formulário (model)
+                    }
                 }
                 catch (Exception e)
                 {
