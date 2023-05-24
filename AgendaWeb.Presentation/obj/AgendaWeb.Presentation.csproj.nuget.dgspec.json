@@ -92,7 +92,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -101,8 +101,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
               "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
                 "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
@@ -117,8 +117,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -126,15 +126,19 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[7.0.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.4, )"
+              "version": "[4.8.5, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.7.0, )"
             }
           },
           "imports": [
