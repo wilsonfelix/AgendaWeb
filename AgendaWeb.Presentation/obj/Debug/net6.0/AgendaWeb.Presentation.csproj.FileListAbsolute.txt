@@ -228,6 +228,7 @@ D:\Projetos\Projetos_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\ru
 D:\Projetos\Projetos_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.csproj.CopyComplete
 D:\Projetos\Projetos_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.RazorAssemblyInfo.cache
 D:\Projetos\Projetos_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.RazorAssemblyInfo.cs
+<<<<<<< HEAD
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\appsettings.Development.json
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\appsettings.json
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.staticwebassets.runtime.json
@@ -748,6 +749,16 @@ F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWe
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.exe
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.deps.json
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.runtimeconfig.json
+=======
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\appsettings.Development.json
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\appsettings.json
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.staticwebassets.runtime.json
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.exe
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.deps.json
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.runtimeconfig.json
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.dll
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\AgendaWeb.Presentation.pdb
+>>>>>>> master
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\Dapper.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\Humanizer.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\MessagePack.dll
@@ -964,14 +975,35 @@ F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWe
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+<<<<<<< HEAD
+=======
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.csproj.AssemblyReference.cache
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.AssemblyInfoInputs.cache
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.AssemblyInfo.cs
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.csproj.CoreCompileInputs.cache
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.MvcApplicationPartsAssemblyInfo.cs
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.MvcApplicationPartsAssemblyInfo.cache
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.RazorAssemblyInfo.cache
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.RazorAssemblyInfo.cs
+>>>>>>> master
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.AgendaWeb.Presentation.Microsoft.AspNetCore.StaticWebAssets.props
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.build.AgendaWeb.Presentation.props
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AgendaWeb.Presentation.props
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AgendaWeb.Presentation.props
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets.pack.json
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets.build.json
+<<<<<<< HEAD
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\scopedcss\bundle\AgendaWeb.Presentation.styles.css
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.csproj.CopyComplete
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\refint\AgendaWeb.Presentation.dll
+=======
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\staticwebassets.development.json
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\scopedcss\bundle\AgendaWeb.Presentation.styles.css
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.csproj.CopyComplete
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.dll
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\refint\AgendaWeb.Presentation.dll
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.pdb
+>>>>>>> master
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\AgendaWeb.Presentation.genruntimeconfig.cache
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Presentation\obj\Debug\net6.0\ref\AgendaWeb.Presentation.dll

@@ -8,7 +8,10 @@
     ".NETCoreApp,Version=v6.0": {
       "AgendaWeb.Presentation/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "AgendaWeb.Infra.Data": "1.0.0",
+=======
+>>>>>>> master
           "Dapper": "2.0.123",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.5",
           "Swashbuckle.AspNetCore": "6.4.0",

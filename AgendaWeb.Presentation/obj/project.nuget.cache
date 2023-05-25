@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "BGCxt9++8+FxZBlHRn3pvvrvcjMagonBNafzAdLSzxBlWC/p7teVbgAXtsFcXg9qpIQgyDY4g+pXstS3mVF9JA==",
+=======
+  "dgSpecHash": "8KSa4BTus2cfu8A26nvh98bZmHqSYHL+xuaWWKUIcSG9myjYO+MOXqpFihPUN1yLDBHNRdrvpLuRJtX/it5A8Q==",
+>>>>>>> master
   "success": true,
   "projectFilePath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
   "expectedPackageFiles": [

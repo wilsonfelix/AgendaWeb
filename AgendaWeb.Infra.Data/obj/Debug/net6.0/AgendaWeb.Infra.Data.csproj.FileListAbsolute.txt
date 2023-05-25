@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.deps.json
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.dll
 D:\Projetos\Projetos_csharp\Projeto06_csharp\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.pdb
@@ -22,6 +23,8 @@ F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\Nova pasta\AgendaW
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\Nova pasta\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\refint\AgendaWeb.Infra.Data.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\Nova pasta\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.pdb
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\Nova pasta\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\ref\AgendaWeb.Infra.Data.dll
+=======
+>>>>>>> master
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.deps.json
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.pdb
