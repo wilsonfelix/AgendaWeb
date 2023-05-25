@@ -11,8 +11,11 @@ var connectionString = builder.Configuration.GetConnectionString("AgendaWeb");
 
 //Envia a connectionstring para a classe EventoRepository
 builder.Services.AddTransient<IEventoRepository>
-    (map => new EventoRepository(connectionString));
+(map => new EventoRepository(connectionString));
 
+//Envia a connectionstring para a classe IHistoricoRepository
+builder.Services.AddTransient<IHistoricoRepository>
+(map => new HistoricoRepository(connectionString));
 
 builder.Services.AddRazorPages();
 

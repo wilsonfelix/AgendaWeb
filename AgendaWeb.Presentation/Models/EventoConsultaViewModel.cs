@@ -17,5 +17,7 @@ namespace AgendaWeb.Presentation.Models
         //Lista de eventos que será utilizado para exibir
         //na página o resultado da consulta feita no banco
         public List<Evento>? Eventos { get; set; }
+
+        
     }
 }

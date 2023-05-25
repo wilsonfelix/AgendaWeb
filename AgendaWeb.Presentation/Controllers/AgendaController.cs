@@ -2,6 +2,7 @@
 using AgendaWeb.Infra.Data.Interfaces;
 using AgendaWeb.Presentation.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection;
 
 namespace AgendaWeb.Presentation.Controllers
 {
@@ -9,12 +10,15 @@ namespace AgendaWeb.Presentation.Controllers
     {
         //atributo
         private readonly IEventoRepository _eventoRepository;
-
+        private readonly IHistoricoRepository _historicoRepository;
         //construtor para inicializar o atributo
-        public AgendaController(IEventoRepository eventoRepository)
+        public AgendaController(IEventoRepository eventoRepository, IHistoricoRepository historicoRepository)
         {
             _eventoRepository = eventoRepository;
+            _historicoRepository = historicoRepository;
         }
+        
+             
 
         public IActionResult Cadastro()
         {
@@ -94,9 +98,11 @@ namespace AgendaWeb.Presentation.Controllers
         [HttpPost] //Annotation indica que o método será executado no SUBMIT
         public IActionResult Consulta(EventoConsultaViewModel model)
         {
+                        
             //verificar se todos os campos da model passaram nas validações
             if (ModelState.IsValid)
             {
+
                 try
                 {
                     //converter as datas
@@ -108,7 +114,7 @@ namespace AgendaWeb.Presentation.Controllers
                     {
                         if (model.Ativo == 3) 
                         {
-                            model.Eventos = _eventoRepository.GetAll(DataMin, DataMax, model.Ativo);
+                            model.Eventos = _eventoRepository.GetAllNot(DataMin, DataMax);
                         }
                         else
                         {
@@ -201,7 +207,7 @@ namespace AgendaWeb.Presentation.Controllers
                     {
                         TempData["MensagemErro"] = "A data de início do evento não pode ser atualizada com a data anterior a atual.";
                     }
-                    else if (HoraCadEvento < HoraSysConv)
+                    else if (DataCadEvento == DataSysConv && HoraCadEvento < HoraSysConv )
                     {
                         TempData["MensagemErro"] = "Não se pode atualizar um evento com a hora atual. Por favor selecione ao menos 1 minuto a mais.";
                     }
@@ -223,6 +229,9 @@ namespace AgendaWeb.Presentation.Controllers
                         _eventoRepository.Update(evento);
 
                         TempData["MensagemSucesso"] = "Dados do evento atualizado com sucesso.";
+                        return RedirectToAction("Consulta");
+                        
+                       
                     }
                 }
                 catch (Exception e)
@@ -238,9 +247,52 @@ namespace AgendaWeb.Presentation.Controllers
             return View();
         }
 
+        public IActionResult Exclusao(Guid id)
+        {
+
+            try
+            {
+                //obtendo os dados do evento no banco de dados..
+                var evento = _eventoRepository.GetById(id);
+                var historico = new Historico
+                {
+                    Id = Guid.NewGuid(),
+                    Id_Evento = Convert.ToString(evento.Id),
+                    Nome = evento.Nome,
+                    Data = Convert.ToDateTime(evento.Data).ToString("dd-MM-yyyy"),
+                    Hora = evento.Hora.ToString(),
+                    Descricao = evento.Descricao,
+                    Prioridade = evento.Prioridade,
+                    DataInclusao = Convert.ToDateTime(evento.DataInclusao).ToString("dd-MM-yyyy"),
+                    DataAlteracao = Convert.ToDateTime(evento.DataAlteracao).ToString("dd-MM-yyyy"),
+                    DataExclusao = Convert.ToDateTime(DateTime.Now).ToString("dd-MM-yyyy"),
+                    Ativo = evento.Ativo
+                };
+                //gravando no banco de dados
+                _historicoRepository.Create(historico);
+
+                //deleta registro de evento//
+                _eventoRepository.Delete(evento);
+                TempData["MensagemAlerta"] = $"Evento '{evento.Nome}' excluido com sucesso!";
+            
+                
+                 
+            }
+            catch (Exception e)
+            {
+
+                TempData["MensagemAlerta"] = e.Message;
+
+            }
+            //redireciona para a pagina de consulta
+
+            return RedirectToAction("Consulta");
+        }
+
         public IActionResult Relatorio()
         {
             return View();
         }
+        
     }
 }

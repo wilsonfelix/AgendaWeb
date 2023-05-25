@@ -48,10 +48,13 @@ namespace AgendaWeb.Infra.Data.Repositories
             }
         }
 
+
+
         public List<Evento> GetAll()
         {
-            
+
             var query = @"SELECT * FROM EVENTO
+                        
                         ORDER BY DATA DESC, HORA DESC
             ";
 
@@ -72,6 +75,33 @@ namespace AgendaWeb.Infra.Data.Repositories
             using (var connection = new SqlConnection(_connectionString))
             {
                 return connection.Query<Evento>(query).ToList();
+            }
+        }
+
+        public List<Evento> GetAllAtivo(DateTime? DataMin, DateTime? DataMax, int? Ativo)
+        {
+            var query = @"SELECT * FROM EVENTO
+                        ORDER BY DATA DESC, HORA DESC
+            ";
+
+            //Conecta no DB
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                return connection.Query<Evento>(query).ToList();
+            }
+        }
+
+        public List<Evento> GetAllNot(DateTime? DataMin, DateTime? DataMax)
+        {
+            var query = @"SELECT * FROM EVENTO
+                        WHERE DATA BETWEEN @DataMin AND @DataMax 
+                        ORDER BY DATA DESC, HORA DESC
+            ";
+
+            //Conecta no DB
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                return connection.Query<Evento>(query, new { DataMin, DataMax }).ToList();
             }
         }
 
@@ -120,5 +150,7 @@ namespace AgendaWeb.Infra.Data.Repositories
                 connection.Execute(query, obj);
             }
         }
+
+        
     }
 }
