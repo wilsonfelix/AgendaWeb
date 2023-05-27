@@ -155,6 +155,7 @@ namespace AgendaWeb.Presentation.Controllers
         public IActionResult Edicao(Guid Id)
         {
             var model = new EventoEdicaoViewModel();
+            
 
             try
             {
@@ -185,9 +186,16 @@ namespace AgendaWeb.Presentation.Controllers
         [HttpPost]
         public IActionResult Edicao(EventoEdicaoViewModel model)
         {
+            var model2 = new EventoConsultaViewModel();
+
+            //converter as datas
+            var DataMin = Convert.ToDateTime(model2.DataMin);
+            var DataMax = Convert.ToDateTime(model2.DataMax);
+
             //verificar se todos os campos passaram nas regras de validação
             if (ModelState.IsValid)
             {
+                
                 try
                 {
                     //Converte a data
@@ -228,8 +236,14 @@ namespace AgendaWeb.Presentation.Controllers
                         //atualizando no banco de dados
                         _eventoRepository.Update(evento);
 
+
                         TempData["MensagemSucesso"] = "Dados do evento atualizado com sucesso.";
-                        return RedirectToAction("Consulta");
+                        return RedirectToAction("Consulta", new
+                        {
+                            //falta implementar no front
+                            //Value = model2.Eventos = _eventoRepository.GetAllNot(DataMin, DataMax)
+
+                        });
                         
                        
                     }
