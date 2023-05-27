@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "BGCxt9++8+FxZBlHRn3pvvrvcjMagonBNafzAdLSzxBlWC/p7teVbgAXtsFcXg9qpIQgyDY4g+pXstS3mVF9JA==",
-=======
-  "dgSpecHash": "8KSa4BTus2cfu8A26nvh98bZmHqSYHL+xuaWWKUIcSG9myjYO+MOXqpFihPUN1yLDBHNRdrvpLuRJtX/it5A8Q==",
->>>>>>> master
+  "dgSpecHash": "Z2v92xSe4mPBMeLZwr2JuDavk5Vo40Q3OwtTPdbVwu5BGP1X1Fj9XdMUMBD4NZqvRznAzI1ZeDlF6vrNIcXUng==",
   "success": true,
-  "projectFilePath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+  "projectFilePath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wilson\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Wilson\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -168,5 +164,12 @@
     "C:\\Users\\Wilson\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Wilson\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Presentation\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

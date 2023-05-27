@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\AgendaWeb.Infra.Data",
-    "\\AgendaWeb.Infra.Data\\Repositories"
+    ""
   ],
-  "SelectedNode": "\\AgendaWeb.Infra.Data\\Repositories\\EventoRepository.cs",
+  "SelectedNode": "\\AgendaWeb.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net7.0": {
       "Dapper/2.0.123": {
         "type": "package",
         "compile": {
@@ -496,7 +496,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net7.0": [
       "Dapper >= 2.0.123",
       "System.Data.SqlClient >= 4.8.4"
     ]
@@ -508,11 +508,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
+      "projectUniqueName": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
       "projectName": "AgendaWeb.Infra.Data",
-      "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
+      "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
       "packagesPath": "C:\\Users\\Wilson\\.nuget\\packages\\",
-      "outputPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\obj\\",
+      "outputPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -523,7 +523,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -531,8 +531,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -543,8 +543,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "dependencies": {
           "Dapper": {
             "target": "Package",
