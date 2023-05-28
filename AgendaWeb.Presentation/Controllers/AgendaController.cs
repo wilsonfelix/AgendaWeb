@@ -114,7 +114,7 @@ namespace AgendaWeb.Presentation.Controllers
                     {
                         if (model.Ativo == 3) 
                         {
-                            model.Eventos = _eventoRepository.GetAllNot(DataMin, DataMax);
+                            model.Eventos = _eventoRepository.GetAll(DataMin, DataMax);
                         }
                         else
                         {
@@ -238,12 +238,7 @@ namespace AgendaWeb.Presentation.Controllers
 
 
                         TempData["MensagemSucesso"] = "Dados do evento atualizado com sucesso.";
-                        return RedirectToAction("Consulta", new
-                        {
-                            //falta implementar no front
-                            //Value = model2.Eventos = _eventoRepository.GetAllNot(DataMin, DataMax)
-
-                        });
+                        return RedirectToAction("Consulta");
                         
                        
                     }

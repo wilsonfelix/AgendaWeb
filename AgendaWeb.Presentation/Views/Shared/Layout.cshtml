@@ -50,40 +50,9 @@
 
                     
                 </ul>
-                       
-                   @* <form class="d-flex">
-
-                    <div class = "row mb-3">
-                        <div class="col-md-12">
-                            <input class="form-control me-2" type="search" placeholder="Insira sua busca" aria-label="Search">
-                            <button class="btn btn-primary" type="submit">Pesquisar</button>
-                        </div>
-                    </div>
-                    
-                        <span class="text-danger">
-                            @Html.ValidationMessageFor(model => model)
-                        </span>
-                    
-                        <input class="form-control me-2" type="search" placeholder="Insira sua busca" aria-label="Search">
-                        <button class="btn btn-primary" type="submit">Pesquisar</button>
-                      
-                    </form>*@
-                   
-                
+                  
             </div>
-                    <div class = "row mb-3">
-                        <div class="col-md-12">
-                            <input class="form-control me-2" type="search" placeholder="Insira sua busca" aria-label="Search">
-                            
-                        </div>
-                       
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-12">
-
-                            <button class="btn btn-primary" type="submit">Pesquisar</button>
-                        </div>
-                    </div>
+                    
         </div>
     </nav>
     <!-- Exibir mensagem de sucesso --> 
@@ -94,12 +63,6 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
 
-            @*<div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Sucesso!</strong> @TempData["MensagemSucesso"]
-                <button type="button" class="Close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>*@
         }
     else if (TempData["MensagemAlerta"] != null)
         {
@@ -108,12 +71,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
-       @* <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Atenção!</strong> @TempData["MensagemAlerta"]
-            <button type="button" class="Close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>*@
+       
         }
     else if(TempData["MensagemErro"] != null)
     {
