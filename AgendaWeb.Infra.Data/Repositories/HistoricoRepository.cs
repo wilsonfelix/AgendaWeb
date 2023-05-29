@@ -48,11 +48,6 @@ namespace AgendaWeb.Infra.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Historico? GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Update(Historico entity)
         {
             throw new NotImplementedException();
@@ -62,12 +57,7 @@ namespace AgendaWeb.Infra.Data.Repositories
         {
             throw new NotImplementedException();
         }
-
-        public List<Historico>? GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public List<Historico> GetAll(DateTime? DataMin, DateTime? DataMax)
         {
             throw new NotImplementedException();

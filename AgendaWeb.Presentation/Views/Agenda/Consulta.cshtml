@@ -7,41 +7,41 @@
 <hr />
 
  @using (Html.BeginForm())
-    {
-
-    
+    {   
     <div class = "row mb-3">
         <div class="col-md-3">
-            <label>Data de início:</label>
+            <b><label>Data de início:</label></b>
                 @Html.TextBoxFor(model => model.DataMin, new{@type="date", @class = "form-control"})
             <span class="text-danger">
                 @Html.ValidationMessageFor(model => model.DataMin)
             </span>
+            <div class="row mb-3">
+                &nbsp;
+                <div class="col-md-12">
+                    <input type="submit" value="Consultar" class="btn btn-primary" />
+                </div>
+            </div>
         </div>
         <div class="col-md-3">
-            <label>Data de término:</label>
+            <b><label>Data de término:</label></b>
                 @Html.TextBoxFor(model => model.DataMax, new{@type="date", @class = "form-control"})
             <span class="text-danger">
                 @Html.ValidationMessageFor(model => model.DataMax)
             </span>
         </div>
         <div class="col-md-6">
-            <br />
-            @Html.RadioButtonFor(model => model.Ativo, "1") <span>Eventos Ativos</span>
             &nbsp;&nbsp;
-            @Html.RadioButtonFor(model => model.Ativo, "0") <span>Eventos Inativos</span>
+            <b><label>Tipo do Evento:</label></b><br />
             &nbsp;&nbsp;
-            @Html.RadioButtonFor(model => model.Ativo, "3") <span>Todos os Eventos</span>
-            <br />
+            @Html.RadioButtonFor(model => model.Ativo, "1") <span>Eventos Ativos</span><br/>
+            &nbsp;&nbsp;
+            @Html.RadioButtonFor(model => model.Ativo, "0") <span>Eventos Inativos</span><br/>
+            &nbsp;&nbsp;
+            @Html.RadioButtonFor(model => model.Ativo, "3") <span>Todos os Eventos</span><br/>
+            &nbsp;&nbsp;
             <span class="text-danger">
                 @Html.ValidationMessageFor(model => model.Ativo)
             </span>
-        </div>
-    </div>
-
-    <div class = "row mb-3">
-       <div class = "col-md-12">
-            <input type="submit" value="Consultar" class="btn btn-primary"/>
         </div>
     </div>
 
@@ -106,8 +106,9 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="6">
-                        Quantidade de eventos: @Model.Eventos.Count
+                    <td colspan="3">
+                    @*<span><b>Quantidade de eventos: </b>@Html.TextBoxFor(model => model.Eventos.Count, new {@class = "form-control"})</span><br/>*@
+                    <b>Quantidade de eventos:</b> <font color="#4169E1"><big><b>@Model.Eventos.Count</b></big></font>
                     </td>
                 </tr>
             </tfoot>

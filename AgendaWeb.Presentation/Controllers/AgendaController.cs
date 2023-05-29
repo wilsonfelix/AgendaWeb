@@ -75,6 +75,7 @@ namespace AgendaWeb.Presentation.Controllers
 
                         TempData["MensagemSucesso"] = $"Evento {evento.Nome}, cadastrado com sucesso.";
                         ModelState.Clear(); //limpando os campos do formulário (model)
+                        
                     }
                 }
                 catch (Exception e)
@@ -302,6 +303,63 @@ namespace AgendaWeb.Presentation.Controllers
         {
             return View();
         }
-        
+
+        [HttpPost] //Annotation indica que o método será executado no SUBMIT
+        public IActionResult Relatorio(EventoRelatorioViewModel model)
+        {
+
+            //verificar se todos os campos da model passaram nas validações
+            if (ModelState.IsValid)
+            {
+
+                try
+                {
+                    //converter as datas
+                    var DataMin = Convert.ToDateTime(model.DataMin);
+                    var DataMax = Convert.ToDateTime(model.DataMax);
+
+                    //verificando se a data de inicio é menor ou igual a data de fim
+                    if (DataMin <= DataMax)
+                    {
+                        if (model.Ativo == 3)
+                        {
+                            model.Eventos = _eventoRepository.GetAll(DataMin, DataMax);
+                        }
+                        else
+                        {
+                            //realizando a consulta de eventos
+                            model.Eventos = _eventoRepository.GetByDatas(DataMin, DataMax, model.Ativo);
+                        }
+
+
+                        //verificando se algum evento foi obtido
+                        if (model.Eventos.Count > 0)
+                        {
+                            TempData["MensagemSucesso"] = $"{model.Eventos.Count} evento(s) obtido(s) para geração do relatório.";
+                        }
+                        else
+                        {
+                            TempData["MensagemAlerta"] = "Nenhum evento foi encontrado para gerar o relatório.";
+                        }
+                    }
+                    else
+                    {
+                        TempData["MensagemErro"] = "A data de início deve ser menor ou igual a data de término.";
+                    }
+                }
+                catch (Exception e)
+                {
+                    TempData["MensagemErro"] = e.Message;
+                }
+            }
+            else
+            {
+                TempData["MensagemAlerta"] = "Ocorreram erros de validação no preenchimento do formulário.";
+            }
+
+            //voltando para a página
+            return View(model);
+        }
+
     }
 }

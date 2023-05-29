@@ -321,6 +321,9 @@ F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presenta
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presentation\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presentation\bin\Debug\net7.0\System.Security.Permissions.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presentation\bin\Debug\net7.0\System.Windows.Extensions.dll
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presentation\bin\Debug\net7.0\xunit.abstractions.dll
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presentation\bin\Debug\net7.0\xunit.core.dll
+F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presentation\bin\Debug\net7.0\xunit.execution.dotnet.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presentation\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presentation\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
 F:\Documentos\Projetos\Projetos Básicos Net\Projeto06_csharp\AgendaWeb.Presentation\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll

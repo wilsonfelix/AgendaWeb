@@ -1,32 +1,137 @@
-﻿<h5>Relatório de Eventos</h5>
+﻿@*Classe de modelo de dados da pagina*@
+@model AgendaWeb.Presentation.Models.EventoRelatorioViewModel
+
+<h5>Relatório de Eventos</h5>
 <p>
     Preencha os campos para gerar um relatório com seus eventos.
 </p>
 <hr/>
 
-<form>
-
-    <div class="row mb-3">
-        <div class="col-md-3">
-            <label>Data de início:</label>
-            <input type="date" class="form-control" />
+@using(Html.BeginForm())
+{
+    <div class="row mb-6">
+        <div class="col-md-2">
+            <b><label>Data de início:</label></b>
+            @Html.TextBoxFor(model => model.DataMin, new{@type="date", @class = "form-control"})
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataMin)
+            </span>
+        </div>
+        <div class="col-md-2">
+                <b><label>Data de término:</label></b>
+                @Html.TextBoxFor(model => model.DataMax, new{@type="date", @class = "form-control"})
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(model => model.DataMax)
+                </span>
         </div>
         <div class="col-md-3">
-            <label>Data de término:</label>
-            <input type="date" class="form-control" />
+            <b><label>Prioridade do evento:</label></b><br />
+            @Html.RadioButtonFor(model => model.Prioridade, "1") <span>Baixa</span><br />
+            @Html.RadioButtonFor(model => model.Prioridade, "2") <span>Média</span><br />
+            @Html.RadioButtonFor(model => model.Prioridade, "3") <span>Alta</span><br />
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Prioridade)
+            </span>
         </div>
-        <div class="col-md-6">
-            <label>Tipo do Relatório:</label> <br/>
-            <input type="radio" name="tipo"/> Formato PDF <br/>
-            <input type="radio" name="tipo"/> Formato Excel
-        </div>
-    </div>
+        <div class="col-md-3">
 
-    <div class="row mb-3">
-        <div class="col-md-12">
-            <input type="submit" value="Gerar Relatório" 
-            class="btn btn-primary" />
-        </div>
-    </div>
+            <b><label>Tipo de Evento:</label></b> <br />
 
-</form>
+            @Html.RadioButtonFor(model => model.Ativo, "1") <span>Eventos Ativos</span><br />
+
+            @Html.RadioButtonFor(model => model.Ativo, "0") <span>Eventos Inativos</span><br />
+
+            @Html.RadioButtonFor(model => model.Ativo, "3") <span>Todos os Eventos</span><br />
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Ativo)
+            </span>
+        </div>
+    </div><br />
+    <hr />
+        <div class="row mb-6">
+            <div class="col-md-3">
+
+                <b><label>Formato do arquivo de Relatório:</label></b> <br />
+
+                @Html.RadioButtonFor(model => model.Formato, "0") <span>Formato PDF</span>
+
+                @Html.RadioButtonFor(model => model.Formato, "1") <span>Formato Excel</span>
+
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(model => model.Formato)
+            </span><br />
+            <div class="col-md-3"><br />
+                <input type="submit" value="Gerar Relatório"
+                       class="btn btn-primary" />
+            </div>                    
+        </div>       
+    </div><br/>
+}
+
+@if (Model != null && Model.Eventos != null && Model.Eventos.Count > 0)
+{
+    <table id="#myTable" class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nome do evento</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Prioridade</th>
+                <th>Ativo</th>
+                <th>Operações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Eventos)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@Convert.ToDateTime(item.Data).ToString("ddd, dd/MM/yyyy")</td>
+                    <td>@item.Hora</td>
+                    <td>
+                        @if (item.Prioridade == 1)
+                        {
+                            <span class="badge bg-success">BAIXA</span>
+                        }
+                        else if (item.Prioridade == 2)
+                        {
+                            <span class="badge bg-warning">MÉDIA</span>
+                        }
+                        else if (item.Prioridade == 3)
+                        {
+                            <span class="badge bg-danger">ALTA</span>
+                        }
+                    </td>
+                    <td>
+                        @if (item.Ativo == 0)
+                        {
+                            <span class="text-danger">Não</span>
+                        }
+                        else if (item.Ativo == 1)
+                        {
+                            <span class="text-success">Sim</span>
+                        }
+                    </td>
+                    <td>
+                        <a href="/Agenda/Edicao?id=@item.Id" class="btn btn-primary btn-sm">
+                            Alterar
+                        </a>
+                        <a href="/Agenda/Exclusao?id=@item.Id"
+                           onclick="return confirm('Deseja realmente excluir o evento: @item.Nome?');"
+                           class="btn btn-danger btn-sm">
+                            Excluir
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <b>Quantidade de eventos:</b> <font color="#4169E1"><big><b>@Model.Eventos.Count</b></big></font>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+}
