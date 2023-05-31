@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {}
+    "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {}
   },
   "projects": {
-    "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
+    "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
+        "projectUniqueName": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
         "projectName": "AgendaWeb.Infra.Data",
-        "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
+        "projectPath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\Wilson\\.nuget\\packages\\",
-        "outputPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\obj\\",
+        "outputPath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,7 +51,7 @@
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.4, )"
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -74,14 +74,14 @@
         }
       }
     },
-    "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {
+    "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+        "projectUniqueName": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
         "projectName": "AgendaWeb.Presentation",
-        "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+        "projectPath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
         "packagesPath": "C:\\Users\\Wilson\\.nuget\\packages\\",
-        "outputPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Presentation\\obj\\",
+        "outputPath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -104,8 +104,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
-                "projectPath": "F:\\Documentos\\Projetos\\Projetos Básicos Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
+              "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
+                "projectPath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
               }
             }
           }
@@ -126,7 +126,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.6, )"
+              "version": "[8.0.0-preview.4.23261.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -142,11 +142,11 @@
             },
             "xunit.extensibility.core": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[2.5.0-pre.11, )"
             },
             "xunit.extensibility.execution": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[2.5.0-pre.11, )"
             }
           },
           "imports": [
