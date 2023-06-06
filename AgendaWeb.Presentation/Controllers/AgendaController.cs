@@ -47,9 +47,29 @@ namespace AgendaWeb.Presentation.Controllers
                     var HoraSysConv = Convert.ToDateTime(HoraSys);
 
                     //verificando se a data de inicio é menor ou igual a data de fim
-                    if (DataCadEvento < DataSysConv)
+                    if(DataCadEvento < DataSysConv)
                     {
                         TempData["MensagemErro"] = "A data de início do evento não pode ser anterior a data atual.";
+                    }
+                    else if(DataCadEvento > DataSysConv && HoraCadEvento != HoraSysConv)
+                    {
+                        var evento = new Evento
+                        {
+                            Id = Guid.NewGuid(),
+                            Nome = model.Nome,
+                            Data = Convert.ToDateTime(model.Data),
+                            Hora = TimeSpan.Parse(model.Hora),
+                            Descricao = model.Descricao,
+                            Prioridade = Convert.ToInt32(model.Prioridade),
+                            DataInclusao = DateTime.Now,
+                            DataAlteracao = DateTime.Now
+                        };
+
+                        //gravando no banco de dados
+                        _eventoRepository.Create(evento);
+
+                        TempData["MensagemSucesso"] = $"Evento {evento.Nome}, cadastrado com sucesso.";
+                        ModelState.Clear(); //limpando os campos do formulário (model)
                     }
                     else if(HoraCadEvento < HoraSysConv)
                     {
@@ -57,7 +77,6 @@ namespace AgendaWeb.Presentation.Controllers
                     }
                     else
                     {
-
                         var evento = new Evento
                         {
                             Id = Guid.NewGuid(),
