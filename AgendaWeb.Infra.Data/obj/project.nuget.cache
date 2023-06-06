@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b/IuT6bntXg85imXfxQm1WJsv3iACbIBNzV3MgHuUkeRwLTxvM0Zkw3p8kityZn7S9OPM8//vdZnjFcG8VNa6g==",
+  "dgSpecHash": "4unKDVNMrouLTXf8cpMvNZEZXW/FTwBLhQnSzvZx6w72SZF6nNmlpNbr4lPYodH7XsXCuzELwLmtx32Hp69scw==",
   "success": true,
-  "projectFilePath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
+  "projectFilePath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wilson\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Wilson\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
