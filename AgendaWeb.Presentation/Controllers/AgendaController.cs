@@ -297,7 +297,7 @@ namespace AgendaWeb.Presentation.Controllers
                     DataExclusao = Convert.ToDateTime(DateTime.Now).ToString("dd-MM-yyyy"),
                     Ativo = evento.Ativo
                 };
-                //gravando no banco de dados
+                //gravando no banco de dados histórico dos eventos deletados na tabela historico
                 _historicoRepository.Create(historico);
 
                 //deleta registro de evento//

@@ -11489,23 +11489,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Wilson\\.nuget\\packages\\": {},
+    "C:\\Users\\wilson.junior\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+      "projectUniqueName": "E:\\Meu\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
       "projectName": "AgendaWeb.Presentation",
-      "projectPath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
-      "packagesPath": "C:\\Users\\Wilson\\.nuget\\packages\\",
-      "outputPath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Presentation\\obj\\",
+      "projectPath": "E:\\Meu\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+      "packagesPath": "C:\\Users\\wilson.junior\\.nuget\\packages\\",
+      "outputPath": "E:\\Meu\\AgendaWeb\\AgendaWeb.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Wilson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wilson.junior\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11515,15 +11515,15 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "E:\\Camara_de_litigio\\Alfa.Core-v3": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
-              "projectPath": "F:\\Documentos\\Projetos\\Projetos_Basicos_Net\\Projeto06_csharp\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
+            "E:\\Meu\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
+              "projectPath": "E:\\Meu\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
             }
           }
         }
@@ -11586,7 +11586,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
